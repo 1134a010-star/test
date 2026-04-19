@@ -1,0 +1,34 @@
+# Cursor Rules for European Classical Art Project
+
+Rules for AI agents working in Cursor to maintain project consistency.
+
+## Environment Context
+- Static HTML/CSS/JS project.
+- No build step (currently).
+- High emphasis on visual aesthetics (Parallax, Glassmorphism).
+
+## Specific Rules
+
+### 1. Parallax Layering
+- **Always** wrap parallax content in `.parallax-group`.
+- Layers **must** use `transform: translateZ(...) scale(...)` to achieve the depth effect.
+- Do not use scroll-jacking JS if native CSS parallax can achieve the result.
+
+### 2. Animations & Reveals
+- Use `IntersectionObserver` in `script.js` for reveal-on-scroll.
+- The `.hidden` state is handled via a dynamic `<style>` tag in `script.js` or in `style.css`. Prefer `style.css` if modifying.
+- Transition timings should be "Premium" (e.g., `1.2s ease-out`).
+
+### 3. CSS Conventions
+- Use `:root` for all colors and font sizes.
+- Never use hardcoded hex codes outside of `:root`.
+- Prefer `rem` for spacing and font sizes.
+
+### 4. Code Documentation
+- Maintain the descriptive comments in `index.html` for each era.
+- Document any new abstract shape logic.
+
+## Preferred Aesthetic
+- Dark, clean, elegant. 
+- Avoid generic colors.
+- Use `backdrop-filter: blur(...)` for content overlays.
