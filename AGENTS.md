@@ -7,6 +7,16 @@ Welcome, AI coding agent! This project is an interactive, parallax-scrolling exp
 - **Eras Covered**: Ancient Greece/Rome, Renaissance, Baroque.
 - **Tech Stack**: Vanilla HTML5, CSS3 (Vanilla), JavaScript (ES6+). No frameworks or Tailwind unless explicitly requested.
 
+## Versioning Policy
+- **Current Version**: 0.0.1 (tracked in `VERSION` file)
+- **Increment Rule**: Every significant `git commit` must increment the version number.
+- **Scheme**: [MAJOR].[MINOR].[PATCH]
+  - **PATCH**: Small fixes, UI tweaks, or documentation updates.
+  - **MINOR**: New features (e.g., adding a new art era).
+  - **MAJOR**: Structural redesigns or breaking changes.
+- **Responsibility**: The AI agent is responsible for deciding the increment level and updating the `VERSION` file.
+
+
 ## Developer & Agent Guidelines
 
 ### Visual Style & Aesthetic
